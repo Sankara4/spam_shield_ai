@@ -4,7 +4,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "http://10.0.2.2:8000/"
+    var BASE_URL: String = "https://spam-detector-backend-1-bpz7.onrender.com"
+
     // Change this to your FastAPI base URL
 
     val apiService: ApiService by lazy {
